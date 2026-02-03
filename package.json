@@ -2,13 +2,6 @@
   "name": "moontv",
   "version": "0.1.0",
   "private": true,
-  // 👇 明确指定 Node.js 和 pnpm 版本
-  "engines": {
-    "node": ">=18.17.0 <19.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  
-  "packageManager": "pnpm@8.15.0",  // 明确指定 pnpm 版本
   "scripts": {
     "dev": "pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
     "build": "pnpm gen:runtime && pnpm gen:manifest && next build",
